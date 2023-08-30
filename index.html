@@ -1,17 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link href="./style.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <link href="./style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
-<body>
-    <div class="card">
-      <img src="./images/lotus.png" alt="lotus" width="200">
-      <div class="container">
-        <h4>Lotus</h4>
-        <p>Lorem ipsum dolor sit amet test</p>
+
+  <body>
+    <div class="screen">
+    <ul x-data="{ colors: ['Red', 'Orange'] }">
+      <template x-for="color in colors">
+        <div class="card">
+          <div class="container">
+            <img src="./images/lotus.png" alt="lotus" />
+          </div>
+          <div>
+            <h2><b x-text="color"></b></h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-</body>
+      </template>
+    </ul>
+  </body>
 </html>
