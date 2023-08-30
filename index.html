@@ -1,41 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap"
-      rel="stylesheet"
-    />
-    <script src="//unpkg.com/alpinejs" defer></script>
-    <link href="./style.css" rel="stylesheet" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
 
-  <body>
-    <div class="screen">
-    <ul x-data="{ colors: ['Red', 'Orange'] }">
-      <template x-for="color in colors">
-        <div class="card">
-          <div class="container">
-            <img src="./images/lotus.png" alt="lotus" />
-          </div>
-          <div>
-            <h2><b x-text="color"></b></h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-        </div>
+    <link href="./style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  
+<body>
+  <div class="screen">
+    <div class="card">
+      <div class="container">
+         <img src="./images/lotus.png" alt="lotus">
+       </div>
+      <div>
+        <h2><b>Lotus</b></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
-      </template>
-    </ul>
-  </body>
+    </div>
+
+    
+  </div>
+</body>
 </html>
